@@ -19,16 +19,16 @@
                 text-decoration: none;
 
                 &:hover {
-                    background: #F2C94C;
+                    background: #1d6d40;
                 }
 
             }
 
             #logo {
-                background: #F2C94C;
-                border: 1px solid yellow;
+                background: #1d6d40/*#F2C94C*/;
+                border: 1px solid black;
                 text-align: center;
-                color: #2d2e2e;
+                color: #fff;
                 text-decoration: none;
                 font-size: larger;
                 font-weight: bold;
@@ -40,6 +40,19 @@
 
 main {
     margin: 30px 30px 0 -30px;
+    .bank-card {
+        margin: 0.5em;
+
+        img {
+            width: 80px;
+            height: 60px;
+            margin-top: 0.5em;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
     .card-body {
         #secondrow {
             margin-top: 10px;
