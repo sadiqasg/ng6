@@ -1,74 +1,75 @@
-.container {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin: 0 10px;
+main {
+    height: 100%;
 
-    .jumbotron {
-        margin-top: -10px;
-        margin-bottom: 0;
-        background: #F2C94C;
-        text-align: center;
-        
-        h3 {
-            margin-top: -20px;
-            font-weight: bold;
-            color: #2F3032;
-        }
-        #section {
-            margin-top: 20px;
-
-            a {
-                background: #5F4A0C;
+    .container {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    
+        .jumbotron {
+            margin-top: 10px;
+            background: #1d6d40;
+            text-align: center;
+            
+            h3 {
+                margin-top: -20px;
+                font-weight: bold;
                 color: #fff;
-                padding: 5px 20px;
-                text-decoration: none;
-
-                &:hover {
-                    text-shadow: #F2C94C 0 0 10px;
+            }
+            #section {
+                margin-top: 20px;
+    
+                a {
+                    background-color: aquamarine;
+                    color: #4f4f4f;
+                    padding: 5px 20px;
+                    font-size: bold;
+                    text-decoration: none;
+    
+                    &:hover {
+                        text-shadow: #F2C94C 0 0 10px;
+                    }
                 }
             }
+    
         }
+    
+        .card {
+            box-shadow: #555 2px 3px 5px;
+            height: 200%;
+            margin-top: 15px;
 
-    }
-
-    .card {
-        h4, h5 {
-            font-weight: bold;
-        }
-        h4 {
-            text-shadow: 1px 1px 10px #000;
-        }
-
-        box-shadow: #555 2px 3px 5px;
-        height: 115%;
-        margin-top: 15px;
-
-        .top {
-            background: #2F3032;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-        .bottom {
-            margin-top: 1em;
-            color: #2F3032;
-        }
-        .btn {
-            position: absolute;
-            bottom: 0px;
-            widows: 100%;
-            
-            button {
+            h4, h5 {
+                font-weight: bold;
+            }
+            h4 {
+                text-shadow: 1px 1px 10px #000;
+            }    
+            .top {
                 background: #2F3032;
                 color: #fff;
-                border: none;
-                box-shadow: 1px 1px 5px #000;
-
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
+                text-align: center;
+                padding: 1em;
+            }
+            .bottom {
+                margin-top: 1em;
+                color: #2F3032;
+            }
+            .btn {
+                position: absolute;
+                bottom: 0px;
+                
+                button {
+                    background: #2F3032;
+                    color: #fff;
+                    border: none;
+                    box-shadow: 1px 1px 5px #000;
+    
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
                 }
             }
-        }
-    } 
+        } 
+    }
 }
