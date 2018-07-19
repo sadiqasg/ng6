@@ -1,0 +1,52 @@
+main {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-transform: capitalize;
+
+    .row {
+        min-height: 100vh;
+        
+        .col-md-7 {
+            padding-left: 5em;
+        }
+
+        #left {
+            background-image: url(https://res.cloudinary.com/sastech/image/upload/v1531918250/comp_xgc7qc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #000;
+            font-size: larger;
+
+            header {
+                margin: 3em 0;
+            }
+
+            section {
+                margin: 7em 0;
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+
+                p {
+                    span {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        #right {
+            background: #fff;
+            
+            section {
+                margin: 10em 2em;
+
+                form {
+                    input {
+                        margin: 0.5em 0;
+                    }
+                }
+            }
+        }
+    }
+}

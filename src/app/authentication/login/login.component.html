@@ -1,3 +1,43 @@
-<p>
-  login works!
-</p>
+<main>
+  <div class="row">
+    
+    <div class="col-md-7" id="left">
+      <div class="container">
+        <header>
+          <h3>
+            <a routerLink="#">
+              <img src="" alt="sb_logo">
+            </a>
+          </h3>
+        </header>
+        <section>
+          <h3>Welcome to SojiBooks</h3>
+          <p><span>OVER 1</span> million users in nigeria</p>
+          <p><span>50</span> million users accross africa</p>
+          <a routerLink="/signup" class="btn btn-success"><i class="fa fa-register"></i> register today!</a>
+        </section>
+      </div>
+    </div>
+
+    <div class="col-md-5" id="right">
+      <div class="container">
+        <section>
+          <h4 class="text-center">sign in to your account</h4>
+          <hr/>
+          <form>
+            <input type="email" placeholder="Email address" class="form-control">
+            <input type="password" placeholder="Password" class="form-control">
+            <div class="checkbox">
+              <label><input type="checkbox"> remember me</label>
+            </div>
+            <button type="button" class="btn btn-success btn-block">Login</button>
+            <div id="forgot" class="text-center" style="margin-top:5px;">
+              <a routerLink="">forgot your password?</a>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+ 
+  </div>
+</main>

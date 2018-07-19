@@ -12,6 +12,11 @@ import { ReportsComponent } from './dashboard/reports/reports.component';
 import { UsersComponent } from './dashboard/users/users.component';
 import { VendorsComponent } from './dashboard/vendors/vendors.component';
 import { WorkersComponent } from './dashboard/workers/workers.component';
+import { PlansAndPricingComponent } from './dashboard/plans-and-pricing/plans-and-pricing.component';
+import { HowItWorksComponent } from './dashboard/how-it-works/how-it-works.component';
+import { LayoutComponent } from './layout/layout.component';
+import { NavComponent } from './layout/nav/nav.component';
+import { LandingComponent } from './dashboard/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { WorkersComponent } from './dashboard/workers/workers.component';
     ReportsComponent,
     UsersComponent,
     VendorsComponent,
-    WorkersComponent
+    WorkersComponent,
+    PlansAndPricingComponent,
+    HowItWorksComponent,
+    LayoutComponent,
+    NavComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,43 @@
+nav {
+    background: #1a1a1a;
+    height: 100%;
+    position: fixed;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                color: #c0c0c0;
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+
+                &:hover {
+                    background: #1d6d40;
+                }
+
+                i {
+                    vertical-align: middle;
+                }
+
+            }
+
+            #logo {
+                background: #1d6d40;
+                border: 1px solid #000;
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                font-size: larger;
+                font-weight: bold;
+                text-shadow: 0 5px 10px #555;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+main {
+    top: 30px;
+
+    .container {
+        h5 {
+            font-weight: bold;
+            margin-top: 1.5em;
+        }
+        hr {
+            border-width: 5px;
+            background: #1d6d40;
+        }
+        .jumbotron {
+            text-align: center;
+            font-weight: bolder;
+            box-shadow: lightgray 0 0 10px;
+        }
+        .card {
+    
+            table {
+                border-bottom: 1px solid grey;
+            }
+        }
+    }
+}

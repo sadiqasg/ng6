@@ -1,0 +1,40 @@
+main {
+    top: 30px;
+    
+    .container {
+        height: 100%;
+
+        h5 {
+            font-weight: bold;
+            margin-top: 1.5em;
+        }
+        hr {
+            background: #1d6d40;
+        }
+        
+        #top {
+            .col-md-4 {
+                div {
+                    color: #fff;
+                    font-weight: bolder;
+                    border: 1px solid lightgray;
+                    padding: 2em 0 3em 1em;
+                    box-shadow: gray 1px 1px 1px;
+
+                }
+            }
+        }
+
+        #bottom {
+            background: #fff;
+            margin-top: 3em;
+            padding: 0 10px;
+
+            table {
+                border-left: 1px solid lightgray;
+                border-right: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+            }
+        }
+    }
+}
