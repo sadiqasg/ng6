@@ -16,6 +16,11 @@ nav {
                 display: block;
                 text-decoration: none;
 
+                #logo-img {
+                    width: 100px;
+                    height: 50px;
+                }
+
                 &:hover {
                     background: #1d6d40;
                 }
