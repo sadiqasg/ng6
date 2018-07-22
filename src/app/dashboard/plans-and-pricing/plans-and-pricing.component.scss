@@ -1,5 +1,33 @@
 #main {
-    margin-top: 30px;
+    margin: 30px 0;
+
+    .jumbotron {
+        margin: -1em 0.5em 1em 0.5em;
+        background: url(/assets/img/comp.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        box-shadow: 5px 5px 5px darkslategray;
+        
+        h3 {
+            margin-top: -20px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: #000 0 0 10px;
+        }
+        a {
+            background: #5f9ea0;
+            color: #fff;
+            padding: 5px 20px;
+            font-size: bold;
+            text-decoration: none;
+
+            &:hover {
+                transform: scale(1.1);
+                font-weight: bolder;
+            }
+        }
+    }
 
     .pricing-switcher {
         text-align: center;
@@ -58,10 +86,33 @@
 }
 .card {
     height: 100%;
-    padding: 5em 1em;
+    margin: 0 1em;
 
-    ul,
-    ol {
-        list-style-type: none;
+    .head {
+        margin: 1em auto;
     }
+    header h4, h5 {
+        color: #fff;
+    }
+    .pricing-body {
+
+        .pricing-features {
+            margin: 2em auto;
+        }
+
+        ul,
+        ol {
+            list-style-type: none;
+
+            li {
+                margin: 0.5em auto;
+            }
+        }
+        hr {
+            margin: -1px auto;
+            background: #c0c0c0;
+            width: 70%;
+        }
+    }
+
 }
