@@ -17,6 +17,7 @@ import { HowItWorksComponent } from './dashboard/how-it-works/how-it-works.compo
 import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { LandingComponent } from './dashboard/landing/landing.component';
+import { SettingsComponent } from './dashboard/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LandingComponent } from './dashboard/landing/landing.component';
     HowItWorksComponent,
     LayoutComponent,
     NavComponent,
-    LandingComponent
+    LandingComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
