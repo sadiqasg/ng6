@@ -1,0 +1,50 @@
+#main {
+    margin-top: 30px;
+    font-family: 'Josefin Sans';
+
+    section {
+
+        .box {
+            margin: 5% 16%;
+            padding: 2em;
+            background: #fff;
+            box-shadow: #555 0 0 10px;
+            
+            .card {
+                margin: 1em 0;
+                padding: 1em 0;
+
+                a {
+                    color: #000;
+                    font-size: 20px;
+                }
+
+                #hidden-div,
+                #hidden-div2 {
+                    display: none;
+
+                    input {
+                        margin: 0 auto;
+                        width: 80%;
+                    }
+                    .btn {
+                        width: 40%;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.inv-card {
+    margin: 0 1em;
+
+    img {
+        width: 180px;
+
+        &:hover {
+            transform: scale(1.1);
+            border: 1px solid lightseagreen;
+        }
+    }
+}
