@@ -1,0 +1,125 @@
+<div class="body">
+  <app-nav></app-nav>
+
+  <div id="main">
+    <section class="container">
+<!--       <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Account Settings</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Plan</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Invoice</a>
+        </div>
+      </nav>          
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <section class="text-center">
+            ...1
+          </section>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <section class="text-center">
+            ...2
+          </section>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <section class="text-center">
+            ......3
+          </section>
+        </div>
+      </div> -->
+<!--       <div class="box">
+        <div class="card">
+          <a class="btn btn-default" onclick="myFunction()">
+            <i class="fa fa-pencil"></i> Change company name
+          </a>
+
+          <div id="hidden-div" class="text-center">
+            <input type="text" name="name" id="company-name" class="form-control" placeholder="Enter new name"/>
+            <span>
+              <button type="button" class="btn btn-success">Save</button>
+            </span>
+          </div> 
+          <hr>
+          <a class="btn btn-default" onclick="maFunction()">
+            <i class="fa fa-pencil"></i> Change address
+          </a>
+
+          <div id="hidden-div2" class="text-center">
+            <input type="text" name="name" id="company-name" class="form-control" placeholder="Enter new address"/>
+            <span>
+              <button type="button" class="btn btn-success">Save</button>
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <a class="btn btn-default text-info" routerLink="" data-toggle="modal" data-target="#tempModal">
+              <i class="fa fa-copy"></i>
+              Select Invoice template
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <a class="btn btn-default text-danger" routerLink="" data-toggle="modal" data-target="#delModal">
+              <i class="fa fa-trash"></i>
+              Delete company profile
+            </a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-block">Save all changes</button>
+      </div> -->
+    </section>
+  </div>
+</div>        
+
+<!-- modal -->
+<div class="modal fade" id="tempModal" tabindex="-1" role="dialog" aria-labelledby="tempModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tempModalLabel">Select template</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <span class="inv-card"><a routerLink="#"><img src="/assets/img/invoice1.jpg"></a></span>
+            <span class="inv-card"><a routerLink="#"><img src="/assets/img/invoice1.jpg"></a></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Select</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal-->
+
+  <!--second modal -->
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="delModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tempModalLabel">Delete for real?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h5>Chill chill, you sure you wanna do this?</h5>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">Yup Delete</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal-->
