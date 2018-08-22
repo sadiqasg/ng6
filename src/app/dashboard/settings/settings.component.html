@@ -3,7 +3,7 @@
 
   <div id="main">
     <section class="container">
-<!--       <nav>
+      <nav>
         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
           <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Account Settings</a>
           <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Plan</a>
@@ -12,21 +12,91 @@
       </nav>          
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <section class="text-center">
-            ...1
+          <section class="tab-section">
+            <div id="acc-settings">
+              <h6>GENERAL</h6>
+
+                <!-- row one -->
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Company Name</p>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="company-name" class="form-control" placeholder="Enter new name">
+                    <input type="text" name="company-name" class="form-control" placeholder="Repeat name">
+                  </div>
+                </div>
+
+                <!-- row two -->
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Address</p>
+                  </div>
+                  <div class="col-md-6">
+                    <textarea class="form-control" placeholder="Enter new address"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+            <div>
+              <h6>NOTIFICATION</h6>
+
+                <!-- row one -->
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Enter Email for Notification</p>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="mail" class="form-control" placeholder="Enter email address">
+                  </div>
+                </div>
+
+              </div>
+
+            <div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <a href="#" class="bn btn-default text-center text-danger">Delete Account</a>
+                </div>
+              </div>
+
+            </div>              
+
+            <button class="btn btn-success">Update</button>            
           </section>
         </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <section class="text-center">
-            ...2
+          <section class="tab-section">
+            <div class="text-center" id="plan-tab">
+              <p>
+                You are on the free plan.<br/>
+                You have limited access. Upgrade your plan to have full access.
+              </p>
+              <a routerLink="/plans-and-pricing" class="btn btn-success">Upgrade</a>
+            </div>
           </section>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <section class="text-center">
-            ......3
+          <section class="text-center tab-section">
+            <div>
+              <div class="inv-top-card">
+                <i class="fa fa-paper"></i>
+                <p>
+                  There are no invoices yet<br/>
+                  <i class="fa fa-file-o"></i>
+                </p>
+              </div>
+              <div class="inv-bottom-card">
+                <p>Change Invoice Template</p>
+                <img src="" alt="inv-temp">
+                <img src="" alt="inv-temp">
+                <img src="" alt="inv-temp">
+              </div>
+            </div>            
           </section>
         </div>
-      </div> -->
+      </div>
 <!--       <div class="box">
         <div class="card">
           <a class="btn btn-default" onclick="myFunction()">
