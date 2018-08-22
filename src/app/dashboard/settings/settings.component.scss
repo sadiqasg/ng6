@@ -3,48 +3,38 @@
     font-family: 'Josefin Sans';
 
     section {
-
-        .box {
-            margin: 5% 16%;
-            padding: 2em;
+        .tab-content {
             background: #fff;
-            box-shadow: #555 0 0 10px;
-            
-            .card {
-                margin: 1em 0;
-                padding: 1em 0;
+        }
+        .tab-section {
+            height: 32em;
+            padding: 2em;
+
+            h6 {
+                font-weight: bold;
+            }
+            .form-control {
+                margin-bottom: 0.5em;
+            }
+
+            .row {
+                margin-bottom: 2em;
+                border-bottom: 1px solid #c0c0c0;
 
                 a {
-                    color: #000;
-                    font-size: 20px;
-                }
-
-                #hidden-div,
-                #hidden-div2 {
-                    display: none;
-
-                    input {
-                        margin: 0 auto;
-                        width: 80%;
-                    }
-                    .btn {
-                        width: 40%;
-                        margin-top: 5px;
+                    &:hover {
+                        text-decoration: none;
                     }
                 }
             }
         }
-    }
-}
-.inv-card {
-    margin: 0 1em;
-
-    img {
-        width: 180px;
-
-        &:hover {
-            transform: scale(1.1);
-            border: 1px solid lightseagreen;
+        .btn {
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 0 1px #000;
+        }
+        #plan-tab {
+            padding-top: 13%;
         }
     }
 }
