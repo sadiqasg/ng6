@@ -18,127 +18,128 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 
 </head>
 <body>
   <app-root></app-root>
 </body>
 <script>
-    var ctx = document.getElementById("myChart").getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-            datasets: [{
-                label: '# of Sales',
-                data: [3, 2, 9, 12, 15, 19],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
+    // var ctx = document.getElementById("myChart").getContext('2d');
+    // var myChart = new Chart(ctx, {
+    //     type: 'line',
+    //     data: {
+    //         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    //         datasets: [{
+    //             label: '# of Sales',
+    //             data: [3, 2, 9, 12, 15, 19],
+    //             backgroundColor: [
+    //                 'rgba(255, 99, 132, 0.2)',
+    //                 'rgba(54, 162, 235, 0.2)',
+    //                 'rgba(255, 206, 86, 0.2)',
+    //                 'rgba(75, 192, 192, 0.2)',
+    //                 'rgba(153, 102, 255, 0.2)',
+    //                 'rgba(255, 159, 64, 0.2)'
+    //             ],
+    //             borderColor: [
+    //                 'rgba(255,99,132,1)',
+    //                 'rgba(54, 162, 235, 1)',
+    //                 'rgba(255, 206, 86, 1)',
+    //                 'rgba(75, 192, 192, 1)',
+    //                 'rgba(153, 102, 255, 1)',
+    //                 'rgba(255, 159, 64, 1)'
+    //             ],
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         scales: {
+    //             yAxes: [{
+    //                 ticks: {
+    //                     beginAtZero:true
+    //                 }
+    //             }]
+    //         }
+    //     }
+    // });
 
     // fchart
-    var ctx = document.getElementById("fChart").getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Today"],
-            datasets: [{
-                label: '# of Sales',
-                data: [3, 2, 9, 12, 15, 19],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
+    // var ctx = document.getElementById("fChart").getContext('2d');
+    // var myChart = new Chart(ctx, {
+    //     type: 'bar',
+    //     data: {
+    //         labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Today"],
+    //         datasets: [{
+    //             label: '# of Sales',
+    //             data: [3, 2, 9, 12, 15, 19],
+    //             backgroundColor: [
+    //                 'rgba(255, 99, 132, 0.2)',
+    //                 'rgba(54, 162, 235, 0.2)',
+    //                 'rgba(255, 206, 86, 0.2)',
+    //                 'rgba(75, 192, 192, 0.2)',
+    //                 'rgba(153, 102, 255, 0.2)',
+    //                 'rgba(255, 159, 64, 0.2)'
+    //             ],
+    //             borderColor: [
+    //                 'rgba(255,99,132,1)',
+    //                 'rgba(54, 162, 235, 1)',
+    //                 'rgba(255, 206, 86, 1)',
+    //                 'rgba(75, 192, 192, 1)',
+    //                 'rgba(153, 102, 255, 1)',
+    //                 'rgba(255, 159, 64, 1)'
+    //             ],
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         scales: {
+    //             yAxes: [{
+    //                 ticks: {
+    //                     beginAtZero:true
+    //                 }
+    //             }]
+    //         }
+    //     }
+    // });
 
     //sChart 
-    var ctx = document.getElementById("sChart").getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-            datasets: [{
-                label: '#(000) of Expenses',
-                data: [15, 20, 15, 10, 5, 20],
-                backgroundColor: [
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 0, 0, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 0, 0, 0.2)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
+    // var ctx = document.getElementById("sChart").getContext('2d');
+    // var myChart = new Chart(ctx, {
+    //     type: 'line',
+    //     data: {
+    //         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    //         datasets: [{
+    //             label: '#(000) of Expenses',
+    //             data: [15, 20, 15, 10, 5, 20],
+    //             backgroundColor: [
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 0, 0, 0.2)'
+    //             ],
+    //             borderColor: [
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 0, 0, 0.2)',
+    //                 'rgba(255, 206, 86, 1)',
+    //                 'rgba(75, 192, 192, 1)',
+    //                 'rgba(153, 102, 255, 1)',
+    //                 'rgba(255, 159, 64, 1)'
+    //             ],
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         scales: {
+    //             yAxes: [{
+    //                 ticks: {
+    //                     beginAtZero:true
+    //                 }
+    //             }]
+    //         }
+    //     }
+    // });
 
     // settings component click function
     function myFunction() {
@@ -158,5 +159,30 @@
             x.style.display = "none";
         }
     }
+
+    // customers link.. add table button
+    function addRow() {
+        var table = document.getElementById("data");
+        var row = table.insertRow();
+
+        var cell1 = row.insertCell(0).contentEditable = "true";
+        var cell2 = row.insertCell(1).contentEditable = "true";
+        var cell3 = row.insertCell(2).contentEditable = "true";
+        var cell4 = row.insertCell(3).contentEditable = "true";
+        var cell5 = row.insertCell(4);
+        var cell6 = row.insertCell(5);
+
+        cell1.innerHTML = "new";
+        cell2.innerHTML = "John Doe";
+        cell3.innerHTML = "jd@mail.com";
+        cell4.innerHTML = "12345678";
+        cell5.innerHTML = "Active";
+        cell6.innerHTML = '<a class="btn btn-light">Edit </a><a class="btn btn-danger">Delete</a>';
+
+        var updateBtn = document.getElementById("update-btn");
+        updateBtn.style.display = "inline";
+
+    }
+
     </script>
 </html>
