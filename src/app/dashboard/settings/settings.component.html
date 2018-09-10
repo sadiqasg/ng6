@@ -57,7 +57,7 @@
             <div>
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <a href="#" class="bn btn-default text-center text-danger">Delete Account</a>
+                  <a href="javascript:void(0)" class="bn btn-default text-center text-danger" data-toggle="modal" data-target="#myModal">Delete Account</a>
                 </div>
               </div>
 
@@ -78,118 +78,53 @@
           </section>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <section class="text-center tab-section">
-            <div>
+          <section class="tab-section">
+            <div class="text-center">
               <div class="inv-top-card">
                 <i class="fa fa-paper"></i>
-                <p>
+                <h5>
                   There are no invoices yet<br/>
-                  <i class="fa fa-file-o"></i>
-                </p>
+                  <i class="fa fa-file-o fa-2x"></i>
+                </h5>
               </div>
               <div class="inv-bottom-card">
                 <p>Change Invoice Template</p>
-                <img src="" alt="inv-temp">
-                <img src="" alt="inv-temp">
-                <img src="" alt="inv-temp">
+                <img src="./assets/img/invoice1.jpg" alt="inv-temp">
+                <img src="./assets/img/invoice1.jpg" alt="inv-temp">
+                <img src="./assets/img/invoice1.jpg" alt="inv-temp">
               </div>
-            </div>            
+            </div>
+            <button class="btn btn-success">Update</button>                          
           </section>
         </div>
       </div>
-<!--       <div class="box">
-        <div class="card">
-          <a class="btn btn-default" onclick="myFunction()">
-            <i class="fa fa-pencil"></i> Change company name
-          </a>
 
-          <div id="hidden-div" class="text-center">
-            <input type="text" name="name" id="company-name" class="form-control" placeholder="Enter new name"/>
-            <span>
-              <button type="button" class="btn btn-success">Save</button>
-            </span>
-          </div> 
-          <hr>
-          <a class="btn btn-default" onclick="maFunction()">
-            <i class="fa fa-pencil"></i> Change address
-          </a>
-
-          <div id="hidden-div2" class="text-center">
-            <input type="text" name="name" id="company-name" class="form-control" placeholder="Enter new address"/>
-            <span>
-              <button type="button" class="btn btn-success">Save</button>
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div>
-            <a class="btn btn-default text-info" routerLink="" data-toggle="modal" data-target="#tempModal">
-              <i class="fa fa-copy"></i>
-              Select Invoice template
-            </a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div>
-            <a class="btn btn-default text-danger" routerLink="" data-toggle="modal" data-target="#delModal">
-              <i class="fa fa-trash"></i>
-              Delete company profile
-            </a>
-          </div>
-        </div>
-        <button type="button" class="btn btn-block">Save all changes</button>
-      </div> -->
     </section>
   </div>
 </div>        
 
-<!-- modal -->
-<div class="modal fade" id="tempModal" tabindex="-1" role="dialog" aria-labelledby="tempModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="tempModalLabel">Select template</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <span class="inv-card"><a routerLink="#"><img src="/assets/img/invoice1.jpg"></a></span>
-            <span class="inv-card"><a routerLink="#"><img src="/assets/img/invoice1.jpg"></a></span>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Select</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--modal-->
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
-  <!--second modal -->
-<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="delModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="tempModalLabel">Delete for real?</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <h5>Chill chill, you sure you wanna do this?</h5>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger">Yup Delete</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        </div>
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Delete Account</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Are you sure you want to delete your account?
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
     </div>
   </div>
-  <!--modal-->
+</div>

@@ -18,6 +18,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { LandingComponent } from './dashboard/landing/landing.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
+import { PlansComponent } from './plans/plans.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SettingsComponent } from './dashboard/settings/settings.component';
     LayoutComponent,
     NavComponent,
     LandingComponent,
-    SettingsComponent
+    SettingsComponent,
+    PlansComponent
   ],
   imports: [
     BrowserModule,

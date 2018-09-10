@@ -8,55 +8,78 @@
                   <div class="container">
                       <h5>Customers</h5>
                       <hr>
-                      <div class="card-body">
+                      <div class="card">
                         <div class="text-right" style="margin-bottom: 1em;">
-                            <a href="" class="btn btn-primary"><i class="fa fa-plus"></i> Add New</a>
+                            <a href="javascript:void(0)" class="btn btn-success" style="display:none;" id="update-btn">Update</a>&nbsp;
+                            <a href="javascript:void(0)" class="btn btn-default" onclick="addRow()"><i class="fa fa-plus"></i> Add New</a>
                         </div>                        
-                        <table class="table table-sm table-hover">
-                            <thead class="bg-info">
+                        <table class="table table-hover" id="data">
+                            <thead class="bg-light">
                               <tr>
-                                <th scope="col">#</th>
+                                <th scope="col">S/N</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
-                                <th scope="col">Number</th>
-                                <th scope="col">Occupation</th>
-                                <th scope="col">Years</th>
-                                <th scope="col">Status</th>
-                                <th scope="col"></th>
-                                <th></th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">Subscription</th>
+                                <th scope="col">Action</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row">1</th>
-                                <td>John Wick</td>
-                                <td>john@wick.com</td>
-                                <td>12345</td>
-                                <td>Doctor</td>
-                                <td>01/02/03 - Present</td>
+                                <th scope="row">01</th>
+                                <td>Sadiq A.S</td>
+                                <td>sadiqasg@gmail.com</td>
+                                <td>07012345678</td>
                                 <td>Active</td>
-                                <td><a>Edit <i class="fa fa-pencil"></i></a></td>
+                                <td>
+                                  <a class="btn btn-light">Edit </a>
+                                  <a class="btn btn-danger">Delete</a>
+                                </td>
                               </tr>
                               <tr>
-                                <th scope="row">2</th>
-                                <td>Jane Wick</td>
-                                <td>jane@wick.com</td>
-                                <td>12345</td>
-                                <td>Software Developer</td>
-                                <td>01/02/03 - Present</td>
-                                <td>Active</td>
-                                <td><a>Edit <i class="fa fa-pencil"></i></a></td>
+                                <th scope="row">02</th>
+                                <td>Jane Doe</td>
+                                <td>sadiqasg@gmail.com</td>
+                                <td>07012345678</td>
+                                <td style="color:#c0c0c0;">Inactive</td>
+                                <td>
+                                  <a class="btn btn-light">Edit </a>
+                                  <a class="btn btn-danger">Delete</a>
+                                </td>
                               </tr>
                               <tr>
-                                <th scope="row">3</th>
-                                <td>John Doe</td>
-                                <td>jdoe@wick.com</td>
-                                <td>12345</td>
-                                <td>Chef</td>
-                                <td>01/02/03 - 04/05/06</td>
-                                <td>Inactive</td>
-                                <td><a>Edit <i class="fa fa-pencil"></i></a></td>
+                                <th scope="row">03</th>
+                                <td>Sadiq A.S</td>
+                                <td>sadiqasg@gmail.com</td>
+                                <td>07012345678</td>
+                                <td>Active</td>
+                                <td>
+                                  <a class="btn btn-light">Edit </a>
+                                  <a class="btn btn-danger">Delete</a>
+                                </td>
                               </tr>
+                              <tr>
+                                <th scope="row">04</th>
+                                <td>Sadiq A.S</td>
+                                <td>sadiqasg@gmail.com</td>
+                                <td>07012345678</td>
+                                <td>Active</td>
+                                <td>
+                                  <a class="btn btn-light">Edit </a>
+                                  <a class="btn btn-danger">Delete</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">05</th>
+                                <td>Sadiq A.S</td>
+                                <td>sadiqasg@gmail.com</td>
+                                <td>07012345678</td>
+                                <td>Active</td>
+                                <td>
+                                  <a class="btn btn-light">Edit </a>
+                                  <a class="btn btn-danger">Delete</a>
+                                </td>
+                              </tr>                                                            
                             </tbody>
                           </table>
                       </div>

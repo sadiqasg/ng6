@@ -13,6 +13,7 @@ import { VendorsComponent } from './dashboard/vendors/vendors.component';
 import { WorkersComponent } from './dashboard/workers/workers.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
+import { PlansComponent } from './plans/plans.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'nav', component: NavComponent},
   {path: 'settings', component: SettingsComponent},
+  {path: 'plans', component: PlansComponent}
 ];
 
 @NgModule({

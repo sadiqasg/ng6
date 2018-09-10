@@ -7,7 +7,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
-        box-shadow: 5px 5px 5px darkslategray;
+        // box-shadow: 5px 5px 5px darkslategray;
         
         h3 {
             margin-top: -20px;
@@ -115,4 +115,8 @@
         }
     }
 
+}
+.btn-info {
+    background: #c0c0c0;
+    border: none;
 }

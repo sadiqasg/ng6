@@ -21,19 +21,22 @@ main {
                 margin: 3em 0 0 0;
             }
             #tag {
-                text-shadow: #000 0 0 10px;
-                font-size: 30px;
+                display: inline-block;
+                background: rgba(100,100,100,0.5);
+                padding: 10px;
+                border-radius: 10px;
+                text-shadow: #000 0 0 5px;
+                font-size: 25px;
                 font-weight: bolder;
-
             }
 
             section {
-                margin: 7em 0;
+                margin: 4em 0;
                 font-size: 20px;
 
                 p {
                     span {
-                        font-size: 24px;
+                        font-size: 22px;
                     }
                 }
             }

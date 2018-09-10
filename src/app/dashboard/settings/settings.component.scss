@@ -36,5 +36,23 @@
         #plan-tab {
             padding-top: 13%;
         }
+
+        .inv-top-card,
+        .inv-bottom-card {
+            border: 1px solid #c0c0c0;
+        }
+        .inv-top-card {
+            padding: 4%;
+        }
+        .inv-bottom-card {
+            margin-top: 2em;
+            margin-bottom: 1em;
+            padding: 3%;
+
+            img {
+                width: 150px;
+                padding: 0 1em;
+            }
+        }
     }
 }

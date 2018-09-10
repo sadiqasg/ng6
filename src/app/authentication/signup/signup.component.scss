@@ -15,17 +15,25 @@ main {
             background-image: url(https://res.cloudinary.com/sastech/image/upload/v1531918250/comp_xgc7qc.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            color: #000;
+            color: #fff;
             font-size: larger;
 
             header {
                 margin: 3em 0;
             }
 
+            #tag {
+                background: rgba(100,100,100,0.5);
+                padding: 5px;
+                border-radius: 10px;
+                text-shadow: #000 0 0 5px;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+
             section {
-                margin: 7em 0;
+                margin: 4em 0;
                 font-size: 20px;
-                font-family: 'Times New Roman', Times, serif;
 
                 p {
                     span {
